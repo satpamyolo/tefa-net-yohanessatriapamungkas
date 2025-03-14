@@ -19,3 +19,6 @@ API CRUD untuk To-Do List menggunakan .NET Core dan MySQL.
 - **POST** /todos - Tambah to-do baru
 - **PUT** /todos/{id} - Perbarui to-do
 - **DELETE** /todos/{id} - Hapus to-do
+
+Berikut tampilan proyek To-Do List yang telah dibuat :
+![Preview](preview.png)
