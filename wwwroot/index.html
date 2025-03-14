@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>To Do List</h1>
+
+    <!-- Form Tambah To-Do -->
+    <form id="todoForm">
+        <input type="text" id="judul" placeholder="Judul" required>
+        <input type="text" id="description" placeholder="Deskripsi" required>
+        <button type="submit">Tambah</button>
+    </form>
+
+    <!-- Tabel Daftar To-Do -->
+    <table>
+        <thead>
+            <tr>
+                <th>Judul</th>
+                <th>Deskripsi</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="todoList"></tbody>
+    </table>
+
+    <!-- Modal Edit To-Do -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeEditModal">&times;</span>
+            <h3>Edit To-Do</h3>
+            <form id="editForm">
+                <input type="hidden" id="editId">
+                <input type="text" id="editJudul" placeholder="Judul" required>
+                <textarea id="editDescription" placeholder="Deskripsi" required></textarea>
+                <button type="submit">Simpan</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
